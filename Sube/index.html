@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUBE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+    <div class="container">
+        <div class="title">SUBE</div>
+        <form action="post" id="form">
+            <div class="subtitle">Selecciona los kilometros a viajar:</div>
+            <select name="kilometros" id="kilometros">
+                <label for="kilometros" class="text"></label>
+                <optgroup class="desplegable" label="Kilometros a viajar">
+                    <option value="kilometros1" class="kilometros">0 - 3 Km</option>
+                    <option value="kilometros2" class="kilometros">3 - 6 Km</option>
+                    <option value="kilometros3" class="kilometros">6 - 12 Km</option>
+                    <option value="kilometros4" class="kilometros">12 - 27 Km</option>
+                    <option value="kilometros5" class="kilometros">Más de 27 Km </option>
+                </optgroup>
+            </select>
+            <div class="subtitle" id="registradasub">Tu sube esta registrada?</div>
+            <input type="checkbox" name="registrada" id="registrada">
+        </form>     
+    </div>
+    <div id="tarifa" class="title"></div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferretería De Cesare</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png" type="png">
+</head>
+<body>
+    <div class="container">
+        <div class="izq">
+            <div id="titulo">Ferretería De Cesare</div>
+            <div id="subtitulo">Tienda Online</div>
+            <form method="dialog" id="formulario">
+                <label for="producto">Producto</label>
+                <input type="text" name="producto" id="producto">
+                <label for="subproducto" id="subproducto-label" style="display: none;">Tipo de destornillador</label>
+                <input type="text" name="subproducto" id="subproducto" class="subproducto" style="display: none;">
+                <label for="cant">Cantidad</label>
+                <input type="number" name="cant" id="cant" value="0" min="1" max="99">
+                <input type="submit" value="Add to cart" id="submit">
+            </form>
+            <div id="costo"></div>
+        </div>
+        <div id="cart">
+            <div class="titulo">Carrito</div>
+            <div id="producto1" class="producto" style="display: none;">
+                <div class="producto-title" id="producto-title-item1"></div>
+                <div class="producto-subtitle" id="producto-subtitle-item1"></div>
+                <div class="bottom">
+                    <form method="dialog" id="form-cart-item1" class="from-cart">
+                        <label for="cant-cart-item1">Cantidad</label>
+                        <input type="number" name="cant-cart-item1" id="cant-cart-item1" min="1" max="99" value="0">
+                    </form>
+                    <div id="price-item1" class="price"></div>
+                    <form method="dialog" id="form-cart-delete1">
+                        <input type="submit" value="delete" id="delete">
+                    </form>
+                </div>
+            </div>
+            <div id="producto2" class="producto" style="display: none;">
+                <div class="producto-title" id="producto-title-item2"></div>
+                <div class="producto-subtitle" id="producto-subtitle-item2"></div>
+                <div class="bottom">
+                    <form method="dialog" id="form-cart-item2" class="from-cart">
+                        <label for="cant-cart-item2">Cantidad</label>
+                        <input type="number" name="cant-cart-item2" id="cant-cart-item2" min="1" max="99" value="0">
+                    </form>
+                    <div id="price-item2" class="price"></div>
+                    <form method="dialog" id="form-cart-delete2">
+                        <input type="submit" value="delete" id="delete">
+                    </form>
+                </div>
+            </div>
+            <div id="producto3" class="producto" style="display: none;">
+                <div class="producto-title" id="producto-title-item3"></div>
+                <div class="producto-subtitle" id="producto-subtitle-item3"></div>
+                <div class="bottom">
+                    <form method="dialog" id="form-cart-item3" class="from-cart">
+                        <label for="cant-cart-item3">Cantidad</label>
+                        <input type="number" name="cant-cart-item3" id="cant-cart-item3" min="1" max="99" value="0">
+                    </form>
+                    <div id="price-item3" class="price"></div>
+                    <form method="dialog" id="form-cart-delete3">
+                        <input type="submit" value="delete" id="delete">
+                    </form>
+                </div>
+            </div>
+            <div id="producto4" class="producto" style="display: none;">
+                <div class="producto-title" id="producto-title-item4"></div>
+                <div class="producto-subtitle" id="producto-subtitle-item4"></div>
+                <div class="bottom">
+                    <form method="dialog" id="form-cart-item4" class="from-cart">
+                        <label for="cant-cart-item4">Cantidad</label>
+                        <input type="number" name="cant-cart-item4" id="cant-cart-item4" min="1" max="99" value="0">
+                    </form>
+                    <div id="price-item4" class="price"></div>
+                    <form method="dialog" id="form-cart-delete4">
+                        <input type="submit" value="delete" id="delete">
+                    </form>
+                </div>
+            </div>
+            <div id="producto5" class="producto" style="display: none;">
+                <div class="producto-title" id="producto-title-item5"></div>
+                <div class="producto-subtitle" id="producto-subtitle-item5"></div>
+                <div class="bottom">
+                    <form method="dialog" id="form-cart-item5" class="from-cart">
+                        <label for="cant-cart-item5">Cantidad</label>
+                        <input type="number" name="cant-cart-item5" id="cant-cart-item5" min="1" max="99" value="0">
+                    </form>
+                    <div id="price-item5" class="price"></div>
+                    <form method="dialog" id="form-cart-delete5">
+                        <input type="submit" value="delete" id="delete">
+                    </form>
+                </div>
+            </div>
+            <div id="producto6" class="producto" style="display: none;">
+                <div class="producto-title" id="producto-title-item6"></div>
+                <div class="producto-subtitle" id="producto-subtitle-item6"></div>
+                <div class="bottom">
+                    <form method="dialog" id="form-cart-item6" class="from-cart">
+                        <label for="cant-cart-item6">Cantidad</label>
+                        <input type="number" name="cant-cart-item6" id="cant-cart-item6" min="1" max="99" value="0">
+                    </form>
+                    <div id="price-item6" class="price"></div>
+                    <form method="dialog" id="form-cart-delete6">
+                        <input type="submit" value="delete" id="delete">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

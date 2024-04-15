@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para el modo claro */
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para el modo claro */
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #007AFF; /* Blue color similar to iOS */
+    transition: color 0.3s ease; /* Transición suave para el modo claro */
+}
+
+.subtitle {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #666; /* Dark gray similar to iOS */
+    transition: color 0.3s ease; /* Transición suave para el modo claro */
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333; /* Dark gray similar to iOS */
+    transition: color 0.3s ease; /* Transición suave para el modo claro */
+}
+
+select,
+input[type="text"],
+input[type="number"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Light gray similar to iOS */
+    margin-bottom: 10px;
+    font-size: 14px;
+    transition: border-color 0.3s ease; /* Transición suave para el modo claro */
+}
+
+select:focus,
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #007AFF; /* Highlight color similar to iOS */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 122, 255, 0.5); /* Light blue shadow on focus */
+}
+
+input[type="submit"] {
+    background-color: #007AFF; /* Blue color similar to iOS */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Transición suave para el modo claro */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+#darkModeToggle {
+    display: none; /* Ocultar el checkbox */
+}
+
+#darkModeLabel {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 20px;
+    background-color: #ccc; /* Color de fondo del interruptor */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave para el interruptor */
+}
+
+#darkModeToggle:checked + #darkModeLabel {
+    background-color: #007AFF; /* Color de fondo del interruptor en modo oscuro */
+}
+
+#darkModeLabel::after {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: #fff; /* Color del punto del interruptor */
+    border-radius: 50%;
+    margin: 2px;
+    transition: transform 0.3s ease; /* Transición suave para el punto del interruptor */
+}
+
+#darkModeToggle:checked + #darkModeLabel::after {
+    transform: translateX(20px); /* Mover el punto del interruptor a la derecha en modo oscuro */
+}
+
+/* Estilos para el modo oscuro */
+.dark-mode {
+    background-color: darkslategrey;
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para el modo oscuro */
+}
+
+.dark-mode .container {
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para el modo oscuro */
+}
+
+.dark-mode .title,
+.dark-mode .subtitle,
+.dark-mode label {
+    color: #ccc;
+    transition: color 0.3s ease; /* Transición suave para el modo oscuro */
+}
+
+.dark-mode select,
+.dark-mode input[type="text"],
+.dark-mode input[type="number"] {
+    border-color: #666;
+    transition: border-color 0.3s ease; /* Transición suave para el modo oscuro */
+}
+
+.dark-mode input[type="submit"] {
+    background-color: #007AFF;
+    transition: background-color 0.3s ease; /* Transición suave para el modo oscuro */
+}

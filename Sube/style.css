@@ -1,0 +1,80 @@
+/* Estilo minimalista de iOS */
+body {
+    background-color: lightgrey;
+}
+/* Estilo del contenedor principal */
+.container {
+    text-align: center;
+    background-color: #fff; /* Color de fondo similar a iOS */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: auto; /* Centrar horizontalmente */
+    position: absolute; /* Establecer posición absoluta */
+    top: 50%; /* Centrar verticalmente */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrar verticalmente */
+    transition: ease-in-out 3s;
+}
+
+#tarifa {
+    display: none;
+    text-align: center;
+    background-color: #fff; /* Color de fondo similar a iOS */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    max-height: 60px;
+    height: 60px;
+    margin: auto; /* Centrar horizontalmente */
+    position: absolute; /* Establecer posición absoluta */
+    top: 80%; /* Centrar verticalmente */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrar verticalmente */
+}
+
+/* Estilo del título */
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #007AFF; /* Blue color similar to iOS */
+    font-family: "Helvetica Neue", sans-serif; /* Cambiamos la fuente */
+}
+
+/* Estilo del subtítulo */
+.subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #666; /* Dark gray similar to iOS */
+    font-family: "Helvetica Neue", sans-serif; /* Cambiamos la fuente */
+}
+
+/* Estilo del subtítulo con ID "registradasub" */
+#registradasub {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Estilo del formulario */
+#form {
+    text-align: center;
+}
+
+/* Estilo para el selector */
+select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Light gray similar to iOS */
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+/* Estilo para el checkbox */
+input[type="checkbox"] {
+    vertical-align: middle;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}

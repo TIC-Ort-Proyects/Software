@@ -1,0 +1,96 @@
+body::-webkit-scrollbar {
+    width: 12px;
+}
+body::-webkit-scrollbar-track {
+    background: darkslategray;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: darkslategray;
+    border-radius: 20px;
+    border: 3px solid beige;
+}
+html {
+    scroll-behavior: smooth;
+}
+#body {
+    background-color: darkslategray;
+    font-family: "Titillium Web", sans-serif;
+    font-style: normal;
+}
+#top {
+    background-color: darkslategray;
+    height: 20px;
+}
+a {
+    font-family: "Titillium Web", sans-serif;
+    font-style: normal;
+    color: darkslategray;
+    text-decoration-line: none;
+}
+a:hover {
+    font-weight: 800;
+    color: beige;
+    background-color: darkslategray;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.menu {
+    text-decoration-style: none;
+    color: darkslategray;
+    border-radius: 20px;
+    padding: 12px;
+    width: 112px;
+    background-color: beige;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 24px;
+    left: 24px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: beige;
+    width: 70%;
+    height: 100%;
+    padding: 24px;
+    margin: auto;
+    border-radius: 20px;
+}
+.title {
+    font-size: 65px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600px;
+}
+.title:hover {
+    background-color: darkslategray;
+    color: beige;
+    border-radius: 15px;
+}
+.subtitle {
+    padding: 12px;
+    font-size: 30px;
+    font-weight: 300px;
+}
+.list {
+    font-size: 20px;
+    padding: 6px;
+    list-style: none;
+}
+.list-title {
+    font-size: 25px;
+    padding: 12px;
+}
+#bottom {
+    background-color: darkslategray;
+    height: 24px;
+}
+.img {
+    border-radius: 10px;
+    width: 100%;
+}

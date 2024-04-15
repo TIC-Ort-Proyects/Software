@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gran Hermano</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+    <input type="checkbox" id="darkModeToggle">
+    <label for="darkModeToggle" id="darkModeLabel"></label>
+    <div class="container">
+        <div class="title" id="title">Gran Hermano</div>
+        <div class="subtitle" id="subtitle">A quien quieres eliminar</div>
+        <form id="formulario">
+            <select name="participante" id="participante">
+                <label for="participante" class="text"></label>
+                <optgroup class="desplegable" label="Selecionar Participante" required>
+                    <option value="participante1" class="participante">Participante 1</option>
+                    <option value="participante2" class="participante">Participante 2</option>
+                    <option value="participante3" class="participante">Participante 3</option>
+                    <option value="participante4" class="participante">Participante 4</option>
+                    <option value="participante5" class="participante">Participante 5</option>
+                    <option value="participante6" class="participante">Participante 6</option>
+                    <option value="participante7" class="participante">Participante 7</option>
+                    <option value="participante8" class="participante">Participante 8</option>
+                    <option value="participante9" class="participante">Participante 9</option>
+                    <option value="participante10" class="participante">Participante 10</option>
+                </optgroup>
+            </select>
+            <label for="nombre" class="text"></label>
+            <input type="text" name="nombre" id="name" placeholder="Nombre" required>
+            <label for="numerotelefono" class="text"></label>
+            <input type="number" name="telefono" id="telefono" placeholder="+123456789012" required>
+            <input type="submit" value="submit" id="submit">
+        </form>
+        <div id="sendedtitle" class="title" style="display: none;">
+            ¡Datos enviados correctamente!
+        </div>
+        <div id="sendedsubtitle" class="subtitle" style="display: none;">
+            Gracias por participar
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

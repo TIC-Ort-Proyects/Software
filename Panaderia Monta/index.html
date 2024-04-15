@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las Delicias De Montañeses</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png" type="png">
+</head>
+<body>
+    <div class="container">
+        <div class="title" id="title">Las Delicias de Montañeses</div>
+        <div class="subtitle" id="subtitle">Calculadora de precios</div>
+        <form action="post" id="formulario">
+            <select name="" id="item">
+                <optgroup class="desplegable" label="Seleccionar cosas a llevar"></optgroup>
+                    <option value="Facturas" class="itemllevar" id="item1">Facturas</option>
+                    <option value="Empanaditas y Canastitas" class="itemllevar" id="item2">Empanaditas y Canastitas</option>
+                    <option value="Masitas Dulces" class="itemllevar" id="item3">Masitas Dulces</option>
+            </select>
+            <input type="number" name="number" id="number" min="1" value="0">
+            <input type="submit" value="submit" id="submit">
+        </form>
+    </div>
+    <div id="precio"></div>
+    <script src="script.js"></script>
+</body>
+</html>
