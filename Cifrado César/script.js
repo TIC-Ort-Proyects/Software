@@ -5,6 +5,7 @@ document.getElementById("form").addEventListener("change", function(event) {
     let palabra = palabrainput.toLowerCase();
     let clave = parseInt(document.getElementById("number").value);
     let accion = document.getElementById("switch").checked ? "descifrar" : "cifrar";
+    let resultadoHTML = document.querySelector(".traductor")
 
     let resultado = "";
     if (accion === "cifrar") {
@@ -14,6 +15,8 @@ document.getElementById("form").addEventListener("change", function(event) {
     }
 
     console.log("Resultado:", resultado);
+    resultadoHTML.textContent = resultado;
+
 });
 
 function cifrarCesar(palabra, clave) {
