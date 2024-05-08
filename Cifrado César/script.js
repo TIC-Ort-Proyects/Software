@@ -58,3 +58,7 @@ function descifrarCesar(palabra, clave, alfabeto){
     }
     return respuesta;
 }
+
+function desifrarPret(){
+    document.getElementById("btn").style.display = "none"
+}
