@@ -4,13 +4,18 @@ document.getElementById("form").addEventListener("change", function(event) {
     let palabra = document.getElementById("word").value;
     let clave = parseInt(document.getElementById("number").value);
     let accion = document.getElementById("switch").checked ? "descifrar" : "cifrar";
-    let resultadoHTML = document.querySelector(".traductor")
+    let resultadoHTML = document.querySelector(".traductor");
+
+    let alfabeto = 'abcdefghijklmnñopqrstuvwxyz';
+    while (clave >= alfabeto.length) {
+        clave -= alfabeto.length;
+    }
 
     let resultado = "";
     if (accion === "cifrar") {
-        resultado = cifrarCesar(palabra, clave);
+        resultado = cifrarCesar(palabra, clave, alfabeto);
     } else {
-        resultado = descifrarCesar(palabra, clave);
+        resultado = descifrarCesar(palabra, clave, alfabeto);
     }
 
     console.log("Palabra: ", palabra);
@@ -20,9 +25,8 @@ document.getElementById("form").addEventListener("change", function(event) {
 
 });
 
-function cifrarCesar(palabra, clave){ 
+function cifrarCesar(palabra, clave, alfabeto){ 
     let letra, respuesta='';
-    let alfabeto = 'abcdefghijklmnopqrstuvwxyz';
     let cifrado  = alfabeto.slice(-clave) + alfabeto.slice(0, alfabeto.length - clave);
     for(let i = 0; i < palabra.length; i++){  
         letra = palabra[i].toLowerCase();
@@ -38,9 +42,8 @@ function cifrarCesar(palabra, clave){
     return  respuesta;
 }
 
-function descifrarCesar(palabra, clave){ 
+function descifrarCesar(palabra, clave, alfabeto){ 
     let letra, respuesta='';
-    let alfabeto = 'abcdefghijklmnopqrstuvwxyz';
     let cifrado = alfabeto.slice(-clave) + alfabeto.slice(0, alfabeto.length - clave);
     for(let i = 0; i < palabra.length; i++) { 
         letra = palabra[i].toLowerCase();
