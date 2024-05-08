@@ -1,8 +1,7 @@
 document.getElementById("form").addEventListener("change", function(event) {
     event.preventDefault();
 
-    let palabrainput = document.getElementById("word").value;
-    let palabra = palabrainput.toLowerCase();
+    let palabra = document.getElementById("word").value;
     let clave = parseInt(document.getElementById("number").value);
     let accion = document.getElementById("switch").checked ? "descifrar" : "cifrar";
     let resultadoHTML = document.querySelector(".traductor")
@@ -14,24 +13,45 @@ document.getElementById("form").addEventListener("change", function(event) {
         resultado = descifrarCesar(palabra, clave);
     }
 
-    console.log("Resultado:", resultado);
+    console.log("Palabra: ", palabra);
+    console.log("Clave: ", clave);
+    console.log("Resultado: ", resultado);
     resultadoHTML.textContent = resultado;
 
 });
 
-function cifrarCesar(palabra, clave) {
-    let resultado = "";
-    for (let caracter = 0; caracter < palabra.length; caracter++) {
-        let charCode = palabra.charCodeAt(caracter);
-        if (charCode >= 97 && charCode <= 122) {
-            resultado += String.fromCharCode(((charCode - 97 + clave) % 26) + 97);
+function cifrarCesar(palabra, clave){ 
+    let letra, respuesta='';
+    let alfabeto = 'abcdefghijklmnopqrstuvwxyz';
+    let cifrado  = alfabeto.slice(-clave) + alfabeto.slice(0, alfabeto.length - clave);
+    for(let i = 0; i < palabra.length; i++){  
+        letra = palabra[i].toLowerCase();
+        if(letra ==' '){
+            respuesta += ' ';
+        } else if (alfabeto.indexOf(letra) !== -1) {
+            letra = cifrado[alfabeto.indexOf(letra)];
+            respuesta += letra;
         } else {
-            resultado += palabra[caracter];
+            respuesta += letra;
         }
     }
-    return resultado;
+    return  respuesta;
 }
 
-function descifrarCesar(palabra, clave) {
-    return cifrarCesar(palabra, 26 - clave);
+function descifrarCesar(palabra, clave){ 
+    let letra, respuesta='';
+    let alfabeto = 'abcdefghijklmnopqrstuvwxyz';
+    let cifrado = alfabeto.slice(-clave) + alfabeto.slice(0, alfabeto.length - clave);
+    for(let i = 0; i < palabra.length; i++) { 
+        letra = palabra[i].toLowerCase();
+        if(letra == ' '){
+            respuesta += ' ';
+        } else if (alfabeto.indexOf(letra) !== -1) {
+            letra = alfabeto[cifrado.indexOf(letra)];
+            respuesta += letra;
+        } else {
+            respuesta += letra;
+        }
+    }
+    return respuesta;
 }
