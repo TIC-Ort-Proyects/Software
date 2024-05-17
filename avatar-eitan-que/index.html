@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Avatar</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <h1>Avatar</h1>
+      <div class="avatar">
+        <img id="imgRopa" src="img/ropa_1.png">
+        <img id="imgBoca" src="img/boca_1.png">
+        <img id="imgOjos" src="img/ojos_1.png">
+        <img id="imgPelo" src="img/pelo_1.png">
+        <img id="imgAnteojos" src="img/anteojos.png" style="display: none;">
+      </div>
+      <div class="selectores">
+        <div class="categoria">
+          <label for="ropa">Ropa:</label>
+          <select name="ropa" id="ropa">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+        </div>
+        <div class="categoria">
+          <label for="boca">Boca:</label>
+          <select name="boca" id="boca">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+          </select>
+        </div>
+        <div class="categoria">
+          <label for="ojos">Ojos:</label>
+          <select name="ojos" id="ojos">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+        <div class="categoria">
+          <label for="pelo">Pelo:</label>
+          <select name="pelo" id="pelo">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+        </div>
+        <div class="categoria">
+          <label for="anteojos">Anteojos:</label>
+          <select name="anteojos" id="anteojos">
+            <option value="1">No</option>
+            <option value="2">Si</option>
+          </select>
+        </div>
+      </div>
+      <div id="generar" class="generar">
+        <span>Generar Avatar</span>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
