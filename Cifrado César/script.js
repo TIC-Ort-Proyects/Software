@@ -22,7 +22,6 @@ document.getElementById("form").addEventListener("change", function(event) {
     console.log("Clave: ", clave);
     console.log("Resultado: ", resultado);
     resultadoHTML.textContent = resultado;
-
 });
 
 function cifrarCesar(palabra, clave, alfabeto){ 
@@ -60,5 +59,11 @@ function descifrarCesar(palabra, clave, alfabeto){
 }
 
 function desifrarPret(){
-    document.getElementById("btn").style.display = "none"
+    document.getElementById("btn").style.display = "none";
+    let msj1 = document.querySelector(".msj1");
+    let msj2 = document.querySelector(".msj2");
+    let msj1limpio = descifrarCesar(msj1.textContent, 15, 'abcdefghijklmnñopqrstuvwxyz');
+    let msj2limpio = descifrarCesar(msj2.textContent, -15, 'abcdefghijklmnñopqrstuvwxyz');
+    msj1.innerHTML = msj1limpio;
+    msj2.innerHTML = msj2limpio;
 }
