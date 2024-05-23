@@ -1,0 +1,57 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(img/pacman2.png);
+  background-size: cover;
+  font-family: "Krona One", sans-serif;
+  font-style: normal;
+  color: #fff;
+  gap: 30px;
+  padding: 20px;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  padding-right: 64px;
+  padding-left: 64px;
+  height: 128px;
+  align-items: center;
+  background-color: #080877;
+  font-size: 30px;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  gap: 128px;
+
+  div {
+    position: relative;
+    width: 350px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 24px;
+    background-color: #6766BC;
+    border-radius: 35px;
+    border: 7px #fff solid;
+    gap: 24px;
+
+    span {
+      font-size: 30px;
+      width: 264px;
+      text-align: center;
+    }
+
+    img {
+      width: auto;
+      height: 262px;
+    }
+  }
+}
