@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <title>NBA</title>
+  </head>
+  <body>
+    <header>
+      <img src="img/nba.svg" alt="NBA Logo" />
+    </header>
+    <main>
+      <div class="selectorFechas">
+        <div class="equipo">
+          <img id="imagenEquipo1" src="img/bos.svg" alt="" />
+          <select id="equipo1"></select>
+        </div>
+        <p>VS</p>
+        <div class="equipo">
+          <select id="equipo2"></select>
+          <img id="imagenEquipo2" src="img/bos.svg" alt="" />
+        </div>
+      </div>
+      <div class="boton" id="boton"><span>Programar Fecha</span></div>
+      <div class="fechas" id="fechas"></div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
