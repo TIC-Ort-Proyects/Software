@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Huella de Carbono</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1 class="content">Huella de Carbono</h1>
+    <h3 class="content">Calculadora de emisiones de CO2 por viaje</h3>
+    <div class="calc content">
+      <label for="km">Cantidad de Km</label>
+      <input type="number" name="km" id="inputKM" min="0" value="0">
+      <label for="medioDeTransporte">Medio de transporte</label>
+      <select name="medioDeTransporte" id="inputMedioDeTransporte">
+        <option value="0">Vuelos Internacionales</option>
+        <option value="1">Vuelos de Cabotaje</option>
+        <option value="2">Auto</option>
+        <option value="3">Colectivo</option>
+        <option value="4">Carpooling</option>
+        <option value="5">Tren Diesel</option>
+        <option value="6">Micro Larga Distancia</option>
+        <option value="7">Tren Eléctrico/Subte</option>
+      </select>
+      <input type="button" value="Calcular" id="calcular">
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
