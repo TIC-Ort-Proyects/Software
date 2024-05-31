@@ -1,0 +1,79 @@
+:root {
+  --old-yellow: #f4f4e2;
+}
+
+.special-elite-regular {
+  font-family: "Special Elite", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "Special Elite", system-ui;
+  font-size: 1.2rem;
+  background-color: var(--old-yellow);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  column-gap: 2rem;
+  padding: 1rem;
+}
+
+header img {
+  float: left;
+  width: 80px;
+}
+
+h1 {
+  font-size: 3.6rem;
+  text-align: center;
+}
+
+main {
+  padding: 0.5rem;
+}
+
+input[type="text"] {
+  display: inline-block;
+  width: 50%;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  font-family: "Special Elite", system-ui;
+  border: 0;
+  border-bottom: 1px solid black;
+  background-color: var(--old-yellow);
+}
+
+input:focus {
+  outline: none;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 40px;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  font-size: 1.6rem;
+  font-family: "Special Elite", system-ui;
+  border: 0;
+  background-color: #333;
+  color: var(--old-yellow);
+  cursor: pointer;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+ol {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
