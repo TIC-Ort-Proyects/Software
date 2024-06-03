@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Copa América</title>
+  </head>
+  <body>
+    <header>
+      <img src="afalogo.png" alt="Logo Afa" />
+      <h1>Lista de convocados Copa América</h1>
+    </header>
+    <main>
+      <div class="player">
+        <label for="jugador">Jugador</label>
+        <input type="text" id="jugador" />
+        <label for="numero">Numero</label>
+        <input type="number" id="numero" />
+        <label for="posicion">Posición</label>
+        <select id="posicion">
+          <option value="Arquero">Arquero</option>
+          <option value="Defensor">Defensor</option>
+          <option value="Volante">Volante</option>
+          <option value="Delantero">Delantero</option>
+        </select>
+        <div class="button" id="agregar"><span>Agregar Jugador</span></div>
+      </div>
+      <div class="list-control">
+        <div class="button" id="limpiar"><span>Limpiar Lista</span></div>
+        <div class="button" id="finalizar"><span>Finalizar Lista</span></div>
+      </div>
+      <section>
+        <h2>Convocados</h2>
+        <ul id="convocados"></ul>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
