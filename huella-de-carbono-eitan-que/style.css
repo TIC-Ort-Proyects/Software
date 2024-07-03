@@ -1,79 +1,103 @@
 body {
     display: flex;
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: auto;
     height: 100vh;
-    background-color: lightgray;
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    color: #fff;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url(img.png) lightgray 50% / cover no-repeat;
 }
 
-.calc {
+.top {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    background-color: gray;
-    align-items: center;
     justify-content: center;
-    padding: 48px;
+    align-items: center;
+    gap: 4px;
+    width: 100%;
+
+    h1 {
+        margin: 0;
+        height: auto;
+        color: #FFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        text-transform: uppercase;
+        width: 50%;
+    }
+
+    h3 {
+        margin: 0;
+        height: auto;
+        color: #FFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+.inputs {
+    display: flex;
+    width: 328px;
+    padding: 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
     border-radius: 16px;
-}
 
-label {
-    width: auto;
-    font-size: 24px;
-}
+    .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
 
-input {
-    width: auto;
-    height: 24px;
-    border: 2px solid #5c5c5c;
-    border-radius: 4px;
-    transition: ease-in-out 1s;
-    background-color: gray;
-    color: #fff;
-    padding: 4px;
+        input {
+            color: #fff;
+            display: flex;
+            padding: 8px 16px;
+            align-items: center;
+            gap: 16px;
+            align-self: stretch;
+            border-radius: 8px;
+            border: 1px solid #FFF;
+            background: rgba(0, 0, 0, 0.50);
+        }
 
-    &::placeholder {
-        color: #5c5c5c;
+        select {
+            display: flex;
+            width: 280px;
+            padding: 8px 16px;
+            align-items: center;
+            gap: 16px;
+            border-radius: 8px;
+            border: 1px solid #FFF;
+            background: rgba(0, 0, 0, 0.50);
+            color: #fff;
+        }
     }
 
-    &:focus {
-        outline: none;
-        border: 2px solid #fff;
-    }
+    #calcular {
+        color: #fff;
+        border-radius: 8px;
+        border: 1px solid #FFF;
+        background: rgba(255, 255, 255, 0.50);
+        display: flex;
+        padding: 8px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        align-self: stretch;
 
-    &:hover {
-        border: 2px solid #fff;
-    }
-}
-
-select {
-    width: auto;
-    height: 36px;
-    border: 2px solid #5c5c5c;
-    border-radius: 4px;
-    transition: ease-in-out 1s;
-    background-color: gray;
-    color: #fff;
-    padding: 4px;
-
-    &::placeholder {
-        color: #5c5c5c;
-    }
-
-    &:focus {
-        outline: none;
-        border: 2px solid #fff;
-    }
-    
-    &:hover {
-        border: 2px solid #fff;
     }
 }
 
@@ -82,20 +106,48 @@ select {
 }
 
 .emicionDivAlert {
-    padding: 64px;
-    background-color: gray;
-    border-radius: 16px;
     display: flex;
+    padding: 24px 48px;
     flex-direction: column;
-    gap: 48px;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: center;
+    gap: 48px;
+    border-radius: 16px;
+    border: 1px solid #FFF;
+    background: rgba(0, 0, 0, 0.30);
 
-    input {
-        width: 70px;
+    .sub {
+        color: #FFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
 
-        &:hover {
-            border: 2px solid #fff;
-        }
+    .titl {
+        color: #FFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    .inputbtn {
+        display: flex;
+        width: 328px;
+        padding: 24px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+        border-radius: 8px;
+        border: 1px solid #FFF;
+        color: #fff;
+        background: rgba(255, 255, 255, 0.50);
     }
 }

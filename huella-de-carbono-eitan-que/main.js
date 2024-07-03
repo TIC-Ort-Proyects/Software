@@ -10,9 +10,9 @@ document.getElementById("calcular").addEventListener("click", function(event) {
       const emicionDiv = document.createElement("div");
       emicionDiv.classList.add("emicionDivAlert");
       emicionDiv.innerHTML = `
-        <span>Cantidad de gCO2 generado por los Km recorridos son:</span>
-        <span>${CO2}gCO2</span>
-        <input type="button" value="Aceptar" id="aceptar">
+        <span class="sub">Cantidad de gCO2 generado por los Km recorridos son:</span>
+        <span class="titl">${CO2}gCO2</span>
+        <input type="button" value="Aceptar" id="aceptar" class="inputbtn">
       `;
 
       document.querySelector("body").appendChild(emicionDiv);
