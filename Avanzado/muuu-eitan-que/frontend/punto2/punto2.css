@@ -1,0 +1,64 @@
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 16px;
+  row-gap: 16px;
+}
+
+.filtros {
+  display: flex;
+  column-gap: 16px;
+  font-size: 18px;
+}
+
+.filtros select {
+  font-size: 18px;
+}
+
+.boton {
+  font-size: 18px;
+  padding: 4px 8px;
+  background-color: var(--yellow-green);
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+  cursor: pointer;
+}
+
+.faltantes {
+  font-size: 16px;
+  color: var(--wine);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid var(--raisin-black);
+}
+
+table thead {
+  background-color: var(--copper);
+  font-size: 20px;
+}
+
+table thead tr th {
+  padding: 4px 0px;
+}
+
+table thead tr th:not(:last-child),
+table tbody tr td:not(:last-child) {
+  border-right: 1px solid var(--raisin-black);
+}
+
+table tbody tr td {
+  padding: 4px 4px;
+}
+
+table tbody tr td:not(:first-child) {
+  text-align: right;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: var(--non-photo-blue);
+}

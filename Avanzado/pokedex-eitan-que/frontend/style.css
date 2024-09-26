@@ -1,0 +1,177 @@
+:root {
+  --white: #f8f8f8;
+  --background-black: #3b3b3b;
+  --font-black: #3a3a3a;
+  --border: #c6c6c6;
+  --light-grey: #eeede5;
+  --blue: #2293cc;
+  --normal: #a8a878;
+  --fire: #f08030;
+  --water: #6890f0;
+  --electric: #f8d030;
+  --grass: #78c850;
+  --ice: #98d8d8;
+  --fighting: #c03028;
+  --poison: #a040a0;
+  --ground: #e0c068;
+  --flying: #a890f0;
+  --psychic: #f85888;
+  --bug: #a8b820;
+  --rock: #b8a038;
+  --ghost: #705898;
+  --dragon: #7038f8;
+  --dark: #705848;
+  --steel: #b8b8d0;
+  --fairy: #ee99ac;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.rubik-regular {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rubik-bold {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  background-color: var(--white);
+}
+
+header {
+  background-color: var(--blue);
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.button {
+  text-decoration: none;
+  width: fit-content;
+  margin-left: 16px;
+  padding: 8px 16px;
+  background-color: var(--background-black);
+  color: var(--white);
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+}
+
+form {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  column-gap: 32px;
+  font-size: 20px;
+}
+
+form .category {
+  display: flex;
+  column-gap: 8px;
+  align-items: center;
+}
+
+form select {
+  padding: 4px;
+  font-size: 20px;
+}
+
+form input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid var(--border);
+  width: 100%;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+table thead {
+  background-color: var(--background-black);
+  color: var(--white);
+}
+
+table thead th {
+  padding: 8px;
+}
+
+table tbody tr:not(:last-child) {
+  border-bottom: 1px solid var(--border);
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: var(--light-grey);
+}
+
+table td {
+  padding: 4px;
+}
+
+table td:not(:last-child) {
+  border-right: 1px solid var(--border);
+}
+
+table td .types {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2px;
+}
+
+table td .type {
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  color: var(--white);
+  min-width: 80px;
+  text-align: center;
+}
+
+table td.number {
+  text-align: right;
+}
+
+table td .checked {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table td .checked input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+}

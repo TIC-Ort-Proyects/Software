@@ -1,0 +1,98 @@
+[
+  {
+    "nombre": "Buenos Aires",
+    "id": 6
+  },
+  {
+    "nombre": "Ciudad Autónoma de Buenos Aires",
+    "id": 2
+  },
+  {
+    "nombre": "Catamarca",
+    "id": 10
+  },
+  {
+    "nombre": "Chaco",
+    "id": 22
+  },
+  {
+    "nombre": "Chubut",
+    "id": 26
+  },
+  {
+    "nombre": "Córdoba",
+    "id": 14
+  },
+  {
+    "nombre": "Corrientes",
+    "id": 18
+  },
+  {
+    "nombre": "Entre Ríos",
+    "id": 30
+  },
+  {
+    "nombre": "Formosa",
+    "id": 34
+  },
+  {
+    "nombre": "Jujuy",
+    "id": 38
+  },
+  {
+    "nombre": "La Pampa",
+    "id": 42
+  },
+  {
+    "nombre": "La Rioja",
+    "id": 46
+  },
+  {
+    "nombre": "Mendoza",
+    "id": 50
+  },
+  {
+    "nombre": "Misiones",
+    "id": 54
+  },
+  {
+    "nombre": "Neuquén",
+    "id": 58
+  },
+  {
+    "nombre": "Río Negro",
+    "id": 62
+  },
+  {
+    "nombre": "Salta",
+    "id": 66
+  },
+  {
+    "nombre": "San Juan",
+    "id": 70
+  },
+  {
+    "nombre": "San Luis",
+    "id": 74
+  },
+  {
+    "nombre": "Santa Cruz",
+    "id": 78
+  },
+  {
+    "nombre": "Santa Fe",
+    "id": 82
+  },
+  {
+    "nombre": "Santiago del Estero",
+    "id": 86
+  },
+  {
+    "nombre": "Tierra del Fuego",
+    "id": 94
+  },
+  {
+    "nombre": "Tucumán",
+    "id": 90
+  }
+]

@@ -1,0 +1,62 @@
+:root {
+  --wine: hsla(337, 41%, 30%, 1);
+  --non-photo-blue: hsla(188, 47%, 78%, 1);
+  --yellow-green: hsla(82, 78%, 43%, 1);
+  --copper: hsla(28, 41%, 51%, 1);
+  --raisin-black: hsla(330, 3%, 12%, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.oxygen-regular {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.oxygen-bold {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+.title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+  align-items: center;
+  background-color: var(--non-photo-blue);
+}
+
+.title h1 {
+  font-size: 48px;
+  width: fit-content;
+}
+
+.home {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 16px;
+  top: 16px;
+  height: calc(100% - 32px);
+  text-decoration: none;
+  color: var(--raisin-black);
+}
+
+.home .material-symbols-outlined {
+  font-size: 48px;
+}

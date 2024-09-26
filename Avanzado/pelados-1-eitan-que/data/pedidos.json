@@ -1,0 +1,13 @@
+[
+  {
+    "cliente": "Eitan",
+    "productos": [
+      {
+        "producto": "cucurucho",
+        "sabores": [
+          "Chocolate"
+        ]
+      }
+    ]
+  }
+]

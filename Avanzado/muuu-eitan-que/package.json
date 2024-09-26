@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "soquetic": "^1.0.4"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "muuu-eitan-que",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ORT-Shulian-Software/muuu-eitan-que.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ORT-Shulian-Software/muuu-eitan-que/issues"
+  },
+  "homepage": "https://github.com/ORT-Shulian-Software/muuu-eitan-que#readme",
+  "description": ""
+}

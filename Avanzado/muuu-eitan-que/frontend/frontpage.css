@@ -1,0 +1,30 @@
+* {
+  color: var(--raisin-black);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.ejercicios {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ejercicios a {
+  text-decoration: none;
+  color: black;
+  border-radius: 12px;
+  background-color: var(--copper);
+  color: var(--raisin-black);
+  font-size: 32px;
+  padding: 0px 16px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
